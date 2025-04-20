@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+/* Ensure navbar height is accounted for */
+section#home {
+  min-height: calc(100vh - 64px); /* Adjust 64px to match your navbar height */
+  padding-top: 64px; /* Same as navbar height */
+}
+
+@media (max-width: 768px) {
+  section#home {
+    min-height: calc(100vh - 56px); /* If navbar is smaller on mobile */
+    padding-top: 56px; /* Same as mobile navbar height */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Add smooth scrolling to the whole page */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust based on navbar height */
+}
