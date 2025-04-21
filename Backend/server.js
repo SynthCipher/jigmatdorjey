@@ -10,9 +10,13 @@ const app = express();
 const port = process.env.PORT || 8082;
 
 // Connect to MongoDB
-mongoose.connect(`${process.env.MONGODB_URI}/portfolio` || 'mongodb://localhost:27017/portfolio')
-  .then(() => console.log('MongoDB connected'))
-  .catch(err => console.error('MongoDB connection error:', err));
+mongoose
+  .connect(
+    `${process.env.MONGODB_URI}/portfolio` ||
+      "mongodb://localhost:27017/portfolio"
+  )
+  .then(() => console.log("MongoDB connected"))
+  .catch((err) => console.error("MongoDB connection error:", err));
 
 // MIDDLEWARE
 app.use(express.json());
@@ -21,7 +25,7 @@ app.use(express.json());
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
-  "https://ice-stupa-dashboard.vercel.app",
+  "https://jigmatdorjey.vercel.app/",
   // "https://auth-o39rfryvr-jigmatdorjeys-projects.vercel.app",
 ];
 
