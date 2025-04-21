@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import { ToastContainer } from "react-toastify";
 import { Routes, Route } from "react-router-dom";
 import Blogs from "./pages/Blogs";
+import { Analytics } from "@vercel/analytics/react"
 // import Blog from "./pages/Blog";
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         {/* <Route path="/blog/:id" element={<Blog />}></Route> */}
       </Routes>
       <Footer />
+      <Analytics/>
     </div>
   );
 };
