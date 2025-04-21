@@ -1,15 +1,15 @@
 import { useContext, useState } from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, FileText } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
-import axios from "axios";
+import { assets } from "../assets/assets";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const navigate = useNavigate();
-  const {backendUrl} =useContext(AppContext);
+  const { backendUrl } = useContext(AppContext);
   const location = useLocation();
-  
+
   // Add state for email input and submission status
   const [email, setEmail] = useState("");
   const [subscribeStatus, setSubscribeStatus] = useState(null);
@@ -31,6 +31,11 @@ const Footer = () => {
       icon: <Mail size={20} />,
       href: "mailto:jigmatdorjey255@gmail.com",
     },
+    {
+      name: "Resume",
+      icon: <FileText size={20} />,
+      href: "/assets/myCV.pdf", // Path to your CV file
+    },
   ];
 
   // Updated footer links to handle both same-page and cross-page navigation
@@ -42,8 +47,14 @@ const Footer = () => {
 
   // Handle navigation with proper hash scrolling
   const handleNavigation = (link) => {
+    if (link.isExternal) {
+      // Open external links or files in a new tab
+      window.open(link.path, "_blank");
+      return;
+    }
+
     const isCurrentPath = location.pathname === link.path;
-    
+
     if (isCurrentPath) {
       // If we're already on the target page, just scroll to the section
       const element = document.getElementById(link.hash);
@@ -53,7 +64,7 @@ const Footer = () => {
     } else {
       // Navigate to the page first, then scroll to section after page loads
       navigate(link.path);
-      
+
       // Wait for navigation to complete before scrolling
       setTimeout(() => {
         const element = document.getElementById(link.hash);
@@ -66,47 +77,47 @@ const Footer = () => {
 
   const handleSubscribe = async (e) => {
     e.preventDefault();
-    
+
     // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      setSubscribeStatus({ 
-        type: "error", 
-        message: "Please enter a valid email address" 
+      setSubscribeStatus({
+        type: "error",
+        message: "Please enter a valid email address",
       });
       return;
     }
-    
+
     setIsSubmitting(true);
-    
+
     try {
       // Option 1: Using fetch
       const response = await fetch(backendUrl + "/api/subscribe", {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email })
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
       });
-      
+
       if (!response.ok) {
         const errorData = await response.json();
-        throw new Error(errorData.message || 'Subscription failed');
+        throw new Error(errorData.message || "Subscription failed");
       }
-      
+
       const data = await response.json();
-      
+
       // Option 2: Using axios (alternative)
       // const response = await axios.post(backendUrl + "/api/subscribe", { email });
       // const data = response.data;
-      
-      setSubscribeStatus({ 
-        type: "success", 
-        message: data.message || "Thanks for subscribing!" 
+
+      setSubscribeStatus({
+        type: "success",
+        message: data.message || "Thanks for subscribing!",
       });
       setEmail("");
     } catch (error) {
-      setSubscribeStatus({ 
-        type: "error", 
-        message: error.message || "Failed to subscribe. Please try again." 
+      setSubscribeStatus({
+        type: "error",
+        message: error.message || "Failed to subscribe. Please try again.",
       });
       console.error("Newsletter subscription error:", error);
     } finally {
@@ -141,6 +152,19 @@ const Footer = () => {
                 </a>
               ))}
             </div>
+
+            {/* Resume Button */}
+            <div className="mt-4">
+              <a
+                href={assets.myCV}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors duration-300 text-sm"
+              >
+                <FileText size={16} className="mr-2" />
+                View Resume
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -171,7 +195,10 @@ const Footer = () => {
               Subscribe to my newsletter for the latest updates on projects and
               blog posts.
             </p>
-            <form className="flex flex-col space-y-2" onSubmit={handleSubscribe}>
+            <form
+              className="flex flex-col space-y-2"
+              onSubmit={handleSubscribe}
+            >
               <input
                 type="email"
                 placeholder="Your email"
@@ -190,12 +217,16 @@ const Footer = () => {
               >
                 {isSubmitting ? "Subscribing..." : "Subscribe"}
               </button>
-              
+
               {/* Status message */}
               {subscribeStatus && (
-                <p className={`text-sm mt-2 ${
-                  subscribeStatus.type === "success" ? "text-green-600" : "text-red-600"
-                }`}>
+                <p
+                  className={`text-sm mt-2 ${
+                    subscribeStatus.type === "success"
+                      ? "text-green-600"
+                      : "text-red-600"
+                  }`}
+                >
                   {subscribeStatus.message}
                 </p>
               )}
@@ -221,13 +252,6 @@ const Footer = () => {
             >
               SynthCipher
             </span>
-            {" • "}
-            <a 
-              href="/privacy-policy" 
-              className="hover:text-gray-800 transition-colors duration-300"
-            >
-              Privacy Policy
-            </a>
           </p>
         </div>
       </div>

@@ -20,6 +20,7 @@ import blog51 from "./blog51.png";
 import blog61 from "./blog61.png";
 import blog71 from "./blog71.png";
 import blog81 from "./blog81.png";
+import myCV from "./jigmatdorjeyCV.pdf"
 
 export const assets = {
   myImage1,
@@ -28,6 +29,7 @@ export const assets = {
   laCrypt,
   kharnak,
   myImage2,
+  myCV
 };
 
 // Example projects data
