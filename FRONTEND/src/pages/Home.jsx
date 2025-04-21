@@ -42,7 +42,7 @@ const Home = () => {
   // For animation on scroll
   const [isVisible, setIsVisible] = useState({});
   const navigate = useNavigate();
-
+  // const {backendUrl}
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -193,6 +193,9 @@ const Home = () => {
     subject: "",
     message: "",
   });
+  useEffect(() => {
+    console.log(backendUrl);
+  }, []);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState("");
