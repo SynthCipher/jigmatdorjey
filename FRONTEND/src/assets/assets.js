@@ -84,166 +84,166 @@ export const projects = [
     liveLink: "https://zomsa.vercel.app/",
     githubLink: "https://github.com/SynthCipher/zomsa",
   },
-  {
-    id: 5,
-    title: "DevConnect",
-    description:
-      "A social platform for developers to share projects, blogs, and connect with others in the tech community.",
-    image: null,
-    technologies: ["Next.js", "MongoDB", "Socket.io", "Chakra UI"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 6,
-    title: "ShopEase",
-    description:
-      "A modern e-commerce site with product search, shopping cart, payment integration, and order tracking.",
-    image: null,
-    technologies: ["React", "Node.js", "Express", "Stripe API", "MongoDB"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 7,
-    title: "EduPlatform",
-    description:
-      "An online learning platform with video courses, quizzes, and progress tracking for students.",
-    image: null,
-    technologies: ["Vue.js", "Firebase", "Vuetify"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 8,
-    title: "Weatherly",
-    description:
-      "A weather dashboard providing real-time weather updates, forecasts, and interactive weather maps.",
-    image: null,
-    technologies: ["React", "OpenWeatherMap API", "Styled Components"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 9,
-    title: "MediaStream",
-    description:
-      "A video streaming platform with user authentication, playlists, and recommendations.",
-    image: null,
-    technologies: ["Next.js", "Node.js", "MongoDB", "JWT"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 10,
-    title: "FitTrack",
-    description:
-      "A fitness tracker web app for logging workouts, tracking progress, and setting goals.",
-    image: null,
-    technologies: ["React", "Redux", "Chart.js", "Firebase"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 11,
-    title: "Recipe Explorer",
-    description:
-      "Discover, filter, and save recipes with nutritional info and step-by-step instructions.",
-    image: null,
-    technologies: ["Vue.js", "Node.js", "MongoDB"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 12,
-    title: "Portfolio Generator",
-    description:
-      "Generate and customize your own developer portfolio website with live preview.",
-    image: null,
-    technologies: ["Next.js", "Chakra UI", "Vercel"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 13,
-    title: "Realtime Chat App",
-    description:
-      "A real-time chat application with group chats, emojis, and notifications.",
-    image: null,
-    technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 14,
-    title: "DataDash",
-    description:
-      "A data visualization dashboard with interactive charts and exportable reports.",
-    image: null,
-    technologies: ["React", "D3.js", "Chart.js", "Tailwind CSS"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 15,
-    title: "GeoLocator",
-    description:
-      "A location-based service app with interactive maps and geofencing features.",
-    image: null,
-    technologies: ["React", "Leaflet", "OpenStreetMap API"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 16,
-    title: "SecureAuth",
-    description:
-      "A secure authentication system with 2FA, OAuth, and role-based access control.",
-    image: null,
-    technologies: ["Next.js", "JWT", "OAuth", "MongoDB"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 17,
-    title: "Cloud Notes",
-    description:
-      "A cloud-based note-taking app with markdown support and real-time sync.",
-    image: null,
-    technologies: ["React", "Firebase", "Redux", "Tailwind CSS"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 18,
-    title: "MusicBox",
-    description:
-      "A music streaming web app with playlists, recommendations, and audio visualizations.",
-    image: null,
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 19,
-    title: "Blogify",
-    description:
-      "A blogging platform with markdown editor, comments, and tags.",
-    image: null,
-    technologies: ["Next.js", "MongoDB", "Chakra UI"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 20,
-    title: "API Explorer",
-    description:
-      "A tool for testing and documenting REST APIs with live requests and responses.",
-    image: null,
-    technologies: ["React", "Node.js", "Express", "Swagger"],
-    liveLink: "#",
-    githubLink: "#",
-  },
+  // {
+  //   id: 5,
+  //   title: "DevConnect",
+  //   description:
+  //     "A social platform for developers to share projects, blogs, and connect with others in the tech community.",
+  //   image: null,
+  //   technologies: ["Next.js", "MongoDB", "Socket.io", "Chakra UI"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 6,
+  //   title: "ShopEase",
+  //   description:
+  //     "A modern e-commerce site with product search, shopping cart, payment integration, and order tracking.",
+  //   image: null,
+  //   technologies: ["React", "Node.js", "Express", "Stripe API", "MongoDB"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 7,
+  //   title: "EduPlatform",
+  //   description:
+  //     "An online learning platform with video courses, quizzes, and progress tracking for students.",
+  //   image: null,
+  //   technologies: ["Vue.js", "Firebase", "Vuetify"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 8,
+  //   title: "Weatherly",
+  //   description:
+  //     "A weather dashboard providing real-time weather updates, forecasts, and interactive weather maps.",
+  //   image: null,
+  //   technologies: ["React", "OpenWeatherMap API", "Styled Components"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 9,
+  //   title: "MediaStream",
+  //   description:
+  //     "A video streaming platform with user authentication, playlists, and recommendations.",
+  //   image: null,
+  //   technologies: ["Next.js", "Node.js", "MongoDB", "JWT"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 10,
+  //   title: "FitTrack",
+  //   description:
+  //     "A fitness tracker web app for logging workouts, tracking progress, and setting goals.",
+  //   image: null,
+  //   technologies: ["React", "Redux", "Chart.js", "Firebase"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 11,
+  //   title: "Recipe Explorer",
+  //   description:
+  //     "Discover, filter, and save recipes with nutritional info and step-by-step instructions.",
+  //   image: null,
+  //   technologies: ["Vue.js", "Node.js", "MongoDB"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 12,
+  //   title: "Portfolio Generator",
+  //   description:
+  //     "Generate and customize your own developer portfolio website with live preview.",
+  //   image: null,
+  //   technologies: ["Next.js", "Chakra UI", "Vercel"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 13,
+  //   title: "Realtime Chat App",
+  //   description:
+  //     "A real-time chat application with group chats, emojis, and notifications.",
+  //   image: null,
+  //   technologies: ["React", "Socket.io", "Node.js", "MongoDB"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 14,
+  //   title: "DataDash",
+  //   description:
+  //     "A data visualization dashboard with interactive charts and exportable reports.",
+  //   image: null,
+  //   technologies: ["React", "D3.js", "Chart.js", "Tailwind CSS"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 15,
+  //   title: "GeoLocator",
+  //   description:
+  //     "A location-based service app with interactive maps and geofencing features.",
+  //   image: null,
+  //   technologies: ["React", "Leaflet", "OpenStreetMap API"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 16,
+  //   title: "SecureAuth",
+  //   description:
+  //     "A secure authentication system with 2FA, OAuth, and role-based access control.",
+  //   image: null,
+  //   technologies: ["Next.js", "JWT", "OAuth", "MongoDB"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 17,
+  //   title: "Cloud Notes",
+  //   description:
+  //     "A cloud-based note-taking app with markdown support and real-time sync.",
+  //   image: null,
+  //   technologies: ["React", "Firebase", "Redux", "Tailwind CSS"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 18,
+  //   title: "MusicBox",
+  //   description:
+  //     "A music streaming web app with playlists, recommendations, and audio visualizations.",
+  //   image: null,
+  //   technologies: ["React", "Node.js", "Express", "MongoDB"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 19,
+  //   title: "Blogify",
+  //   description:
+  //     "A blogging platform with markdown editor, comments, and tags.",
+  //   image: null,
+  //   technologies: ["Next.js", "MongoDB", "Chakra UI"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
+  // {
+  //   id: 20,
+  //   title: "API Explorer",
+  //   description:
+  //     "A tool for testing and documenting REST APIs with live requests and responses.",
+  //   image: null,
+  //   technologies: ["React", "Node.js", "Express", "Swagger"],
+  //   liveLink: "#",
+  //   githubLink: "#",
+  // },
 ];
 
 // Blog posts data
