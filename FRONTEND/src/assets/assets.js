@@ -4,24 +4,19 @@ import logo from "./logo.png";
 import iceStupaProject from "./icesStupa.png";
 import laCrypt from "./lacrypt.png";
 import kharnak from "./kharnak.png";
+
 import blog1 from "./blog1.png";
 import blog2 from "./blog2.png";
-import blog3 from "./blog3.png";
+
 import blog4 from "./blog4.png";
-import blog5 from "./blog5.png";
-import blog6 from "./blog6.png";
 import blog7 from "./blog7.png";
-import blog8 from "./blog8.png";
 import blog11 from "./blog11.png";
 import blog21 from "./blog21.png";
-import blog31 from "./blog31.png";
-import blog41 from "./blog41.png";
-import blog51 from "./blog51.png";
-import blog61 from "./blog61.png";
-import blog71 from "./blog71.png";
-import blog81 from "./blog81.png";
-import myCV from "./jigmatdorjeyCV.pdf"
 
+import blog41 from "./blog41.png";
+import blog71 from "./blog71.png";
+import myCV from "./jigmatdorjeyCV.pdf";
+import zomsa from "./zomsa.png";
 export const assets = {
   myImage1,
   logo,
@@ -29,7 +24,8 @@ export const assets = {
   laCrypt,
   kharnak,
   myImage2,
-  myCV
+  myCV,
+  zomsa
 };
 
 // Example projects data
@@ -74,13 +70,19 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Taskify",
+    title: "ZOMSA",
     description:
-      "A Kanban-style productivity app for managing personal and team tasks with drag-and-drop, due dates, and notifications.",
-    image: null,
-    technologies: ["React", "Redux", "Firebase", "Tailwind CSS"],
-    liveLink: "#",
-    githubLink: "#",
+      "ZOMSA is a community platform designed for Ladakhi people to stay connected across remote areas. It includes features like real-time chat, group messaging, and secure video calls. Built with accessibility in mind, ZOMSA supports low-bandwidth communication and integrates culturally relevant UI elements inspired by Ladakhi aesthetics. Ideal for nomadic communities like those in Kharnak, ZOMSA helps preserve social bonds and cultural exchange despite geographic distances.",
+    image: assets.zomsa, // Replace with a screenshot or logo of the app
+    technologies: [
+      "React",
+      "Zustand",
+      "Stream Chat",
+      "Tailwind CSS",
+      "TanStack Query",
+    ],
+    liveLink: "https://zomsa.vercel.app/",
+    githubLink: "https://github.com/SynthCipher/zomsa",
   },
   {
     id: 5,
@@ -422,7 +424,6 @@ export const blogPosts = [
     ],
   },
 
-
   {
     id: 7,
     title: "Optimizing React Performance: Advanced Techniques",
@@ -488,5 +489,4 @@ export const blogPosts = [
       },
     ],
   },
-  
 ];
