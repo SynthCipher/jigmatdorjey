@@ -67,7 +67,7 @@ export const projects = [
     liveLink: "https://www.onela.in", // Update if needed
     githubLink: "https://github.com/SynthCipher/lasna", // Update if needed
   },
-cd 
+
   {
     id: 3,
     title: "Kharnak",
