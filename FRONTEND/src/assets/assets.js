@@ -94,7 +94,6 @@ export const projects = [
     liveLink: "https://zomsa.vercel.app/",
     githubLink: "https://github.com/SynthCipher/zomsa",
   },
-<<<<<<< HEAD
 
   {
     id: 5,
