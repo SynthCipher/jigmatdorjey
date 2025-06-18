@@ -17,6 +17,7 @@ import blog41 from "./blog41.png";
 import blog71 from "./blog71.png";
 import myCV from "./jigmatdorjeyCV.pdf";
 import zomsa from "./zomsa.png";
+import lasna from "./lasna.png";
 export const assets = {
   myImage1,
   logo,
@@ -25,7 +26,8 @@ export const assets = {
   kharnak,
   myImage2,
   myCV,
-  zomsa
+  zomsa,
+  lasna,
 };
 
 // Example projects data
@@ -47,17 +49,25 @@ export const projects = [
     liveLink: "https://ice-stupa-dashboard.vercel.app/",
     githubLink: "https://github.com/SynthCipher/ICE-STUPA-DASHBOARD",
   },
-
   {
     id: 2,
-    title: "LACRYPT",
+    title: "LASNA",
     description:
-      "A crypto price tracker tailored for the Ladakhi community. LACRYPT brings real-time cryptocurrency updates in a clean and simple interface, making it easy for locals to stay informed about market trends, even with low bandwidth.",
-    image: assets.laCrypt, // Swap this with your real image path
-    technologies: ["React", "CoinGecko API", "Tailwind CSS", "Chart.js"],
-    liveLink: "https://ladalkhi-coin-crypt.vercel.app/",
-    githubLink: "https://github.com/SynthCipher/LACRYPT",
+      "LASNA is a MERN-stack job portal designed to connect Ladakhi youth and professionals. it empowers the local workforce and fosters digital inclusion across Ladakh.",
+    image: assets.lasna, // Replace with a screenshot or logo of the app
+    technologies: [
+      "Express",
+      "React",
+      "Node.js",
+      "Clerk",
+      "Tailwind CSS",
+      "Cloudinary",
+      "Mongoose",
+    ],
+    liveLink: "https://www.onela.in", // Update if needed
+    githubLink: "https://github.com/SynthCipher/lasna", // Update if needed
   },
+
   {
     id: 3,
     title: "Kharnak",
@@ -84,16 +94,18 @@ export const projects = [
     liveLink: "https://zomsa.vercel.app/",
     githubLink: "https://github.com/SynthCipher/zomsa",
   },
+
   {
     id: 5,
-    title: "DevConnect",
+    title: "LACRYPT",
     description:
-      "A social platform for developers to share projects, blogs, and connect with others in the tech community.",
-    image: null,
-    technologies: ["Next.js", "MongoDB", "Socket.io", "Chakra UI"],
-    liveLink: "#",
-    githubLink: "#",
+      "A crypto price tracker tailored for the Ladakhi community. LACRYPT brings real-time cryptocurrency updates in a clean and simple interface, making it easy for locals to stay informed about market trends, even with low bandwidth.",
+    image: assets.laCrypt, // Swap this with your real image path
+    technologies: ["React", "CoinGecko API", "Tailwind CSS", "Chart.js"],
+    liveLink: "https://ladalkhi-coin-crypt.vercel.app/",
+    githubLink: "https://github.com/SynthCipher/LACRYPT",
   },
+
   {
     id: 6,
     title: "ShopEase",

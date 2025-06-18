@@ -93,7 +93,7 @@ export default function Projects() {
           {/* Projects Grid */}
           {filteredProjects.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {animatedProjects.map((project, index) => (
+              {animatedProjects.slice(0,5).map((project, index) => (
                 <div
                   key={project.id}
                   className="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 opacity-0 animate-fadeIn"

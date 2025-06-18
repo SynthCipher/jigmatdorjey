@@ -1,0 +1,59 @@
+[33mcommit 7bb39ab5ddbe48f382f7ab7a7e27f1836d894856[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: jigmat dorjey <jigmatdorjey255@gmail.com>
+Date:   Mon Jun 2 12:18:15 2025 +0530
+
+    new project zomsa is added
+
+[33mcommit 67e16f2eea28f531c7bcdc76615aa68e45c0b022[m
+Author: jigmat dorjey <jigmatdorjey255@gmail.com>
+Date:   Mon Apr 21 21:47:13 2025 +0530
+
+    added analytic
+
+[33mcommit 44009ff10d73c620d2a0f2fab7dfca524bf10d67[m
+Author: jigmat dorjey <jigmatdorjey255@gmail.com>
+Date:   Mon Apr 21 11:31:38 2025 +0530
+
+    .env
+
+[33mcommit 2eb56ca63303f0d0160097967d728dc6e6a20594[m
+Author: jigmat dorjey <jigmatdorjey255@gmail.com>
+Date:   Mon Apr 21 11:27:27 2025 +0530
+
+    added resume
+
+[33mcommit 4341895f9ce77f82fd2b6a618d2e9b9762965e91[m
+Author: jigmat dorjey <102847215+SynthCipher@users.noreply.github.com>
+Date:   Mon Apr 21 10:46:02 2025 +0530
+
+    Delete Backend/.env
+
+[33mcommit 3aa89d0443a57d7ecaafa64031e14c652e438cae[m
+Author: jigmat dorjey <jigmatdorjey255@gmail.com>
+Date:   Mon Apr 21 10:44:47 2025 +0530
+
+    print
+
+[33mcommit 958193f1211d8d35366ff0a97c3a3dbfb68c61f1[m
+Author: jigmat dorjey <jigmatdorjey255@gmail.com>
+Date:   Mon Apr 21 10:38:54 2025 +0530
+
+    server.js frontend link '/' is deletect
+
+[33mcommit 1688d79f30502b80a98059070c5a95354954886d[m
+Author: jigmat dorjey <jigmatdorjey255@gmail.com>
+Date:   Mon Apr 21 10:36:00 2025 +0530
+
+    server.js frontend link is addedd
+
+[33mcommit e9954d7aacac5a32463c19cfd99a7f390bdf256d[m
+Author: jigmat dorjey <jigmatdorjey255@gmail.com>
+Date:   Mon Apr 21 10:31:45 2025 +0530
+
+    mongoose is added
+
+[33mcommit 796e5e496536e2814f1e70eb571e637b5968618c[m
+Author: jigmat dorjey <jigmatdorjey255@gmail.com>
+Date:   Sun Apr 20 23:24:44 2025 +0530
+
+    initial commit

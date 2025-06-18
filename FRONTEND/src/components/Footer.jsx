@@ -31,11 +31,11 @@ const Footer = () => {
       icon: <Mail size={20} />,
       href: "mailto:jigmatdorjey255@gmail.com",
     },
-    {
-      name: "Resume",
-      icon: <FileText size={20} />,
-      href: "/assets/myCV.pdf", // Path to your CV file
-    },
+    // {
+    //   name: "Resume",
+    //   icon: <FileText size={20} />,
+    //   href: `assets.myCV`, // Path to your CV file
+    // },
   ];
 
   // Updated footer links to handle both same-page and cross-page navigation
