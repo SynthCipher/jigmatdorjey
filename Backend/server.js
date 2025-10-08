@@ -27,6 +27,7 @@ const allowedOrigins = [
   "http://localhost:5174",
   "https://jigmatdorjey.vercel.app",
   "https://onela-two.vercel.app",
+  "https://www.onela.in",
   // "https://auth-o39rfryvr-jigmatdorjeys-projects.vercel.app",
 ];
 
